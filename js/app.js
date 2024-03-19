@@ -54,11 +54,9 @@ function ageCalculator() {
         monthInputF.focus()
         return false;
     }
-    // Kiritilgan oy va yil
     const kiritilganOy = parseInt(monthInput);
     const kiritilganYil = parseInt(yearInput);
 
-    // Kiritilgan oyning kunlar sonini aniqlash
     const daysInMonth = new Date(kiritilganYil, kiritilganOy, 0).getDate();
 
     console.log("Kiritilgan oyning kunlar soni:", daysInMonth);
